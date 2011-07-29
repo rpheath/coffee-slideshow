@@ -1,7 +1,7 @@
 exports = this
 exports.AutoPlay = null
 
-(($) ->
+jQuery(document).ready ($) ->
 
   Slideshow =
     inited: false
@@ -63,5 +63,3 @@ exports.AutoPlay = null
         exports.AutoPlay = setTimeout(shift, Slideshow.settings.delay)
   
       exports.AutoPlay = setTimeout(shift, this.settings.delay)
-
-)(jQuery)
